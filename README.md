@@ -47,21 +47,21 @@ ai-pipeline/
 ├── README.md
 └── requirements.txt
 
-Usage Instructions
+## Usage 
 
 •Uploading an Image
 •Click on the "Choose File" button to select an image from your computer.
 •Accepted formats: JPG, PNG, JPEG, BMP.
 •Click on "Process Image" to start the analysis.
 
-Viewing Results
+## Viewing Results
 
 •After processing, the results page will display:
 •Original Image: The image you uploaded.
 •Accuracy Metrics: Precision, Recall, and F1-Score (placeholders).
 •Data Table: Contains segmented images, IDs, descriptions, extracted text, and summaries.
 
-Pipeline Steps
+## Pipeline Steps
 
 Step 1: Image Segmentation
 
@@ -105,14 +105,14 @@ Process:
 Results are displayed on a web page.
 Includes the original image, accuracy metrics, and a data table.
 
-Accuracy Metrics
+## Accuracy Metrics
 
 Precision: Not applicable without ground truth labels.
 Recall: Not applicable without ground truth labels.
 F1-Score: Not applicable without ground truth labels.
 Note: To calculate actual accuracy metrics, you need a dataset with ground truth annotations.
 
-Performance and Efficiency
+## Performance and Efficiency
 
 Optimized Models: Using YOLOv5s and BART Large CNN for a balance between speed and accuracy.
 Efficient Code: Single script implementation for ease of testing and deployment.
@@ -131,24 +131,32 @@ ai-pipeline/
 ├── README.md
 └── requirements.txt
 
-Dependencies
+## Dependencies
 
 Flask: Web framework for the application.
+
 Torch and Torchvision: For deep learning models.
+
 Ultralytics YOLOv5: For object detection.
+
 Pillow (PIL): Image processing.
+
 OpenCV: Image processing.
+
 Pytesseract: OCR for text extraction.
+
 Transformers: For NLP tasks (summarization).
+
 Matplotlib: For image visualization (if needed).
 
-Contributing
+
+## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for any bugs or feature requests.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Contact
+## Contact
 For any questions or support, please contact:
 
 Email: utkarshtiwar89@gmail.com
