@@ -63,7 +63,7 @@ ai-pipeline/
 
 ## Pipeline Steps
 
-Step 1: Image Segmentation
+## Step 1: Image Segmentation
 
 Model: Mask R-CNN (pretrained on COCO dataset).
 Process:
@@ -71,7 +71,7 @@ The uploaded image is segmented to identify different objects.
 Segmentation masks are applied to extract individual objects.
 Segmented images are saved for further analysis.
 
-Step 2: Object Detection and Description
+## Step 2: Object Detection and Description
 
 Model: YOLOv5s (pretrained).
 Process:
@@ -79,27 +79,27 @@ Each segmented image is passed through YOLOv5 for object detection.
 The model predicts the class of the object.
 If no object is detected, it is labeled as "Unknown".
 
-Step 3: Text Extraction
+## Step 3: Text Extraction
 
 Tool: Tesseract OCR.
 Process:
 Extracts text from each segmented image.
 Useful for objects containing text (e.g., signs, documents).
 
-Step 4: Summarization
+## Step 4: Summarization
 
 Model: BART Large CNN.
 Process:
 Combines the object description and extracted text.
 Generates a concise summary of the object's attributes.
 
-Step 5: Data Mapping and Accuracy Calculation
+## Step 5: Data Mapping and Accuracy Calculation
 
 Process:
 Each object's data is compiled into a structured format.
 Accuracy metrics are calculated (currently placeholders).
 
-Step 6: Output Generation
+## Step 6: Output Generation
 
 Process:
 Results are displayed on a web page.
